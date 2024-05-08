@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Ensures that table borders are merged */
+    table-layout: fixed; /* Helps maintain consistent column widths */
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Adds a subtle border for table, rows, and headers */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left; /* Aligns text to the left in table cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers to distinguish */
+}
+
+.selected { /* Styles for the selected row */
+    background-color: #e9e9e9; /* Light grey, ensures visibility of selection */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block; /* Makes label display on top of input */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+button,
+.button { /* Styles for submit button and 'Back to List' link */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none; /* Removes underline from anchor tag */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0; /* Space between buttons and other elements */
+}
+
+button:hover,
+.button:hover { /* Hover effects for button and 'Back to List' link */
+    background-color: #45a049;
+}
+
+.messages {
+    text-align: center;
+    margin-top: 20px;  /* Space above the message box */
+}
+
+.flash {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0; /* Space between multiple messages */
+    color: white;
+    text-align: center;
+}
+
+.flash.error {
+    background-color: #f44336; /* Red color for errors */
+}
+
+.flash.success {
+    background-color: #4CAF50; /* Green color for success messages */
+}
+
+.flash.info {
+    background-color: #2196F3; /* Blue color for informational messages */
+}

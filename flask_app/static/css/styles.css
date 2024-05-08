@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    color: green;  /* Making the title green as requested */
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;  /* Added space between the form and messages */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.messages {
+    text-align: center;
+}
+
+.flash {
+    margin: 10px 0;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.flash.error {
+    background-color: #f44336;
+}
+
+.flash.success {
+    background-color: #4CAF50;
+}
+
+.flash.info {
+    background-color: #2196F3;
+}

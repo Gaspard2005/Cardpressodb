@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Person - CardPresso DB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/manage.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Person</h1>
+        <form action="{{ url_for('edit_person', id=person[0]) }}" method="post">
+            <label for="id_card">ID Card:</label>
+            <input type="text" id="id_card" name="id_card" value="{{ person[1] }}" required>
+
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname" value="{{ person[2] }}" required>
+
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" value="{{ person[3] }}" required>
+
+            <label for="site">Site:</label>
+            <input type="text" id="site" name="site" value="{{ person[4] }}" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" value="{{ person[5] }}" required>
+
+            <label for="idsap">IDSAP:</label>
+            <input type="text" id="idsap" name="idsap" value="{{ person[6] }}" required>
+
+            <button type="submit">Update Person</button>
+            <button onclick="window.location.href='{{ url_for('manage') }}'">Back to List</button>
+        </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="messages">
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
