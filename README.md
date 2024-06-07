@@ -3,19 +3,19 @@ The application can be run with python in a little application developed by myse
 Or in flask with html/css.
 
 
-Step 1 : 
+## Step 1 : 
 Install git
     - Go to https://gitforwindows.org/
     - Download the exe
     - Open the exe click on next until the loading and then wait until the last screen where you will click on finish.
 
-Step 2 :
+## Step 2 :
 Open a terminal
 navigate with the cd command where you want to clone the repo (by default it's the user directory)
 Type git clone https://github.com/Gaspard2005/Cardpressodb
 
 
-Step 3 :
+## Step 3 :
 Install a sql manager (Laragon)
     - Go to https://laragon.org/download/
     - Download the full version
@@ -23,7 +23,7 @@ Install a sql manager (Laragon)
     - Set the language the click on next, next, install and wait until the loading is completed then click on finish
     -
 
-Step 4 : 
+## Step 4 : 
 Import the dump in your sql manager
     - Open Laragon
     - Click on start all
@@ -35,7 +35,7 @@ Import the dump in your sql manager
     - If a pop-up appears click yes
     - Then reload the laragon by clicking on the whole directory and the click on f5 (or fn + f5)
 
-Step 5 :
+## Step 5 :
 Install Pycharm
     - Go to https://www.jetbrains.com/pycharm/download/?section=windows
     - Download the community edition exe
@@ -43,7 +43,7 @@ Install Pycharm
     - Open Pycharm accept the policy
     - Then click on open search the repo you cloned previously and select it.
 
-Step 6 :
+## Step 6 :
 Run the flask app
     - Open the project on pycharm and open the flask_app directory
     - then open flaskapp.py, warning will appears at the top of the window
@@ -52,8 +52,3 @@ Run the flask app
     - You can now access the app here http://127.0.0.1:5000
     - The default username is root, there is no password and the database is cardpresso_db
     - (Optional) you can run a version directly in python that will open a python app --> run cardpresso.py in the main directory
-
-
-To run this project successfully you need to copy / paste the following command in your command prompt.
-
-
